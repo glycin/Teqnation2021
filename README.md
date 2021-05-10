@@ -1,4 +1,4 @@
-# Teqnation2021
+# Fun and absurd things with unity3d & machine learning agents
 Demo Project for Unity MachineLearning Agents demo at Teqnation 2021
 
 The audio files are not included. Also the virtual environemnt files are not included. You will need to install the necessary packages to get this running.
