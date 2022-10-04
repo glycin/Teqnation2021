@@ -42,8 +42,8 @@ public class PirateAgent : Agent
 
     public override void OnEpisodeBegin()
     {
-        transform.localPosition = new Vector3(Random.Range(-1.5f, 5f), startY, Random.Range(-10f, 9f)); ;
-        chest.localPosition = new Vector3(Random.Range(-2f, 5f), chestStartY, Random.Range(5f, 15f)); ;
+        transform.localPosition = new Vector3(Random.Range(-1.5f, 5f), startY, Random.Range(-10f, 9f));
+        chest.localPosition = new Vector3(Random.Range(-2f, 5f), chestStartY, Random.Range(5f, 15f));
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)
@@ -53,6 +53,7 @@ public class PirateAgent : Agent
         actions[1] = Input.GetAxisRaw("Horizontal");
     }
 
+    #region Animation Callbacks
     public void Shoot(int shooting)
     {
     }
@@ -64,6 +65,7 @@ public class PirateAgent : Agent
     public void FootR(int step)
     {
     }
+    #endregion
 
     private void OnTriggerEnter(Collider other)
     {

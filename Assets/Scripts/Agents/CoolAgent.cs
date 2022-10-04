@@ -29,8 +29,8 @@ public class CoolAgent : Agent
 
     public override void OnEpisodeBegin()
     {
-        transform.localPosition = new Vector3(Random.Range(-4f, 3f), -0.3f, Random.Range(0f, -6f)); ;
-        transform.Rotate(transform.up, Random.Range(0, 360));
+        //transform.localPosition = new Vector3(Random.Range(-4f, 3f), -0.3f, Random.Range(0f, -6f)); ;
+        //transform.Rotate(transform.up, Random.Range(0, 360));
         barrel = spawner.SpawnBarrel();
         StartCoroutine(Explode());
     }
